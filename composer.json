@@ -1,0 +1,24 @@
+{
+    "name": "haroldbe17/app-salon_php_mvc_js_sass",
+    "description": "Proyecto",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\" : "./",
+            "Controllers\\" : "./controllers",
+            "Model\\" : "./models",
+            "Classes\\" : "./classes"
+
+        }
+    },
+    "authors": [
+        {
+            "name": "Harold Barrantes",
+            "email": "haroldbaes17@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

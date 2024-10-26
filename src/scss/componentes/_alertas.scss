@@ -1,0 +1,33 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.alertas {
+    display: flex;
+    justify-content: center;
+}
+
+.alerta {
+    padding: calc(v.$separacion / 4);
+    color: v.$blanco;
+    width: 100%;
+    display: block;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: v.$bold;  // Mover esta línea antes de la regla anidada
+    text-transform: uppercase;
+
+    @include m.tablet {
+        width: 80%;
+    }
+
+    
+    &.error {
+        background-color: v.$rojo;
+    }
+
+    &.exito{
+        background-color: v.$verde;
+    }
+}
+
